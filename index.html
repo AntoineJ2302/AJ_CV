@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pics/tab-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&display=swap" rel="stylesheet">
+    <title>Home</title>
+    
+</head>
+<body id="home" >
+    <div class="container">
+
+    <section class="left-space">
+        
+        <nav class="plus-section" id="plus-section">
+            <div id="plus-icon">
+            </div>
+        <div id="plus-section-content" >
+                <div class="toggle-switch-item plus-light hidden">
+                   <div id="night-mode-icon" class="plus-item-icon"></div>        
+                </div>
+
+                <div class="toggle-switch-item plus-language hidden">
+                    <div id="english-icon" class="plus-item-icon"></div> 
+                </div>
+                <div class="toggle-switch-item plus-like hidden">
+                    <div id="like-icon" class="plus-item-icon"></div> 
+                </div>
+                <div class="toggle-switch-item plus-music hidden">
+                    <div id="music-icon" class="plus-item-icon"></div> 
+                </div>
+        </div>
+        
+
+        </nav>
+
+        <div class="music-player" id="music-player">
+                <audio id="audio">
+                    <source src="music/music.mp3" type="audio/mpeg">
+                </audio>
+            <div class="cd-pic" id="cd-pic"></div>
+            <nav class="music-player-buttons">
+                <div class="play" id="play"></div>
+                <div class="next"></div>
+            </nav>
+        </div>
+        <div class="confetti-box hide" id="confetti-box"></div>
+    </section>
+
+    <section id="logo" class="home-start-aj">
+        <h1><span>A</span><span>J</span></h1>
+    </section>
+    
+
+    <nav class="menu">
+                    <a  href="index.html"><div class="menu-icon home home-menu-start" id="home-icon"></div></a>     
+                    <a  href="cursus.html"><div class="menu-icon cursus home-menu-start" id="cursus-icon"></div></a>
+                    <a  href="experiences.html"><div class="menu-icon experiences home-menu-start" id="experiences-icon"></div></a>
+                    <a href="projects.html"><div class="menu-icon projects home-menu-start" id="projects-icon"></div></a>
+                    <a  href="contact.html"><div class="menu-icon contact home-menu-start" id="contact-icon"></div></a>
+    </nav>
+ 
+      
+    <main class="main main-home">
+       
+        <h2>Actuellement en formation Développeur Web et Web Mobile, je suis à la recherche d'un stage de deux mois à partir de janvier 2022.<br><br>
+            D'un naturel créatif, j'apprècie particulièrement les langages CSS et JavaScript.<br><br>
+            Je souhaite de préférence trouver une structure qui me permette d'exprimer et de développer mes compétences en développement Front-end.
+        </h2>
+     
+    </main>
+
+   
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="plusSwitch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="confetti.js"></script>
+   </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pics/tab-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Contact</title>
+    
+</head>
+<body id="contact">
+    <div class="container">
+
+    <section class="left-space">
+        <nav class="plus-section">
+            <div id="plus-icon">
+            </div>
+        <div id="plus-section-content" >
+                <div class="toggle-switch-item plus-light hidden">
+                   <div id="night-mode-icon" class="plus-item-icon"></div>        
+                </div>
+
+                <div class="toggle-switch-item plus-language hidden">
+                    <div id="english-icon" class="plus-item-icon"></div> 
+                </div>
+                <div class="toggle-switch-item plus-like hidden">
+                    <div id="like-icon" class="plus-item-icon"></div> 
+                </div>
+                <div class="toggle-switch-item plus-music hidden">
+                    <div id="music-icon" class="plus-item-icon"></div> 
+                </div>
+        </div>
+        </nav>
+    </section>
+
+    <section id="logo">
+        <h1>AJ</h1>
+    </section>
+
+    <nav class="menu">
+        <a href="index.html"><div class="menu-icon home" id="home-icon"></div></a>     
+        <a href="cursus.html"><div class="menu-icon cursus" id="cursus-icon"></div></a>
+        <a href="experiences.html"><div class="menu-icon experiences" id="experiences-icon"></div></a>
+        <a href="projects.html"><div class="menu-icon projects" id="projects-icon"></div></a>
+        <a href="contact.html"><div class="menu-icon contact" id="contact-icon"></div></a>
+    </nav>
+
+    <main class="main">
+
+        <div class="sent hide" id="sent"></div>
+
+<form id="app" class="form">
+
+<span v-for="e in errors">{{ e }}</span>
+
+    <section v-if="step == 1">
+        <h3>Nom</h3>
+        <input v-model="form.name" type="text" placeholder="Votre nom">
+    </section>
+    <section  v-if="step == 2">
+        <h3>Adresse mail</h3>
+        <input v-model="form.email" type="text" placeholder="Votre email">
+    </section>
+    <section v-if="step == 3">
+        <h3>Message</h3>
+        <textarea v-model="form.message" placeholder="Votre message"></textarea>
+    </section>
+
+    <button 
+    v-if="step != 1"
+    @click.prevent="prevStep">Précédent</button>
+    <button
+    v-if="step != totalsteps"
+    @click.prevent="nextStep">Valider</button>
+    <button
+    v-if="step == 3"
+    @click.prevent="sendEnquiry">Envoyer</button>
+</form>
+   
+ 
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+    <script src="plusSwitch.js"></script>
+</body>
+</html>

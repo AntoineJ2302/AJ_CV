@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pics/tab-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&display=swap" rel="stylesheet">
+    <title>Cursus</title>
+</head>
+<body id="cursus">
+    <div class="container">
+
+    <section class="left-space">
+
+        <nav class="plus-section">
+            <div id="plus-icon">
+            </div>
+        <div id="plus-section-content" >
+                <div class="toggle-switch-item plus-light hidden">
+                   <div id="night-mode-icon" class="plus-item-icon"></div>        
+                </div>
+
+                <div class="toggle-switch-item plus-language hidden">
+                    <div id="english-icon" class="plus-item-icon"></div> 
+                </div>
+                <div class="toggle-switch-item plus-like hidden">
+                    <div id="like-icon" class="plus-item-icon"></div> 
+                </div>
+                <div class="toggle-switch-item plus-music hidden">
+                    <div id="music-icon" class="plus-item-icon"></div> 
+                </div>
+        </div>
+        </nav>
+
+    </section>
+
+    <section id="logo">
+        <h1>AJ</h1>
+    </section>
+
+    <nav class="menu">
+                    <a href="index.html"><div class="menu-icon home" id="home-icon"></div></a>     
+                    <a href="cursus.html"><div class="menu-icon cursus" id="cursus-icon"></div></a>
+                    <a href="experiences.html"><div class="menu-icon experiences" id="experiences-icon"></div></a>
+                    <a href="projects.html"><div class="menu-icon projects" id="projects-icon"></div></a>
+                    <a href="contact.html"><div class="menu-icon contact" id="contact-icon"></div></a>
+    </nav>
+
+    <main class="main main-cursus">
+
+        <div class="cursus-box cursus-three" onclick="flipThree()" id="cursus-box-3">
+            <div class="cursus-box-front front-three">
+                <div class="diploma-logo developper"></div>
+                <div id="hr1"></div>
+                <div id="hr2"></div>
+                <div class="badge"></div>
+            </div>
+            <div class="cursus-box-back">
+                <p>Formation Développeur Web et Web Mobile</p>
+                <p>AFPA, La Valette</p>
+                <p>En cours</p>
+            </div>
+        </div>
+   
+         <div class="cursus-box cursus-two" onclick="flipTwo()" id="cursus-box-2">
+            <div class="cursus-box-front front-two">
+                <div class="diploma-logo communication"></div>
+                <div id="hr1"></div>
+                <div id="hr2"></div>
+                <div class="badge"></div>
+            </div>
+            <div class="cursus-box-back">
+                <p>Master en Communication de marque</p>
+                <p>Sciencescom, Nantes</p>
+                <p>2016</p>
+            </div>
+        </div>
+
+        <div class="cursus-box cursus-one" onclick="flipOne()" id="cursus-box-1">
+            <div class="cursus-box-front front-one">
+                <div class="diploma-logo languages"></div>
+                <div id="hr1"></div>
+                <div id="hr2"></div>
+                <div class="badge"></div>
+            </div>
+            <div class="cursus-box-back">
+                <p>Licence en Langues Etrangères Appliquées</p>
+                <p>Université d'Angers</p>
+                <p>2010</p>
+            </div>
+        </div>
+
+       
+        </div>
+
+   
+    </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="plusSwitch.js"></script>
+</body>
+</html>
